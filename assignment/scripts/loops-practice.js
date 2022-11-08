@@ -13,21 +13,23 @@ for (let i=0; i<4; i++) {
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
-// changed stopping condition to i<6
-for (let i=0; i<6; i++) {
+// changed: stopping condition to i<=5
+for (let i=0; i<=5; i++) {
   console.log(i);
 }
 
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
-for (let i=3; i<6; i++) {
+// changed: initialization to i=3, stopping condition to i<=5
+for (let i=3; i<=5; i++) {
   console.log(i);
 }
 
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+// changed: initialization to i=2, stopping condition to i<=10, iteration statement to i+=2
 for (let i=2; i<=10; i+=2) {
   console.log(i);
 }
@@ -63,7 +65,7 @@ console.log('---- 3. While loop ----');
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
 i = 0;
-while (i < 6) {
+while (i <= 5) {
   console.log(i);
   i++;
 }
@@ -71,7 +73,7 @@ while (i < 6) {
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
 i = 10;
-while (i > 4) {
+while (i >= 5) {
   console.log(i);
   i--;
 }
